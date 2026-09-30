@@ -1,82 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
-    <link rel="stylesheet" href="build/css/app.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa de Lujo Frente al Bosque | Bienes Raíces</title>
+  <meta name="description" content="Ficha técnica de residencia exclusiva frente al bosque. 4 recámaras, acabados de mármol, terraza privada y máxima seguridad." />
+
+  <!-- Google Fonts & Stylesheet -->
+  <link rel="stylesheet" href="build/css/app.css" />
 </head>
 <body>
     
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="index.html">
-                    <img src="build/img/logo.svg" alt="Logotipo de Bienes Raices">
-                </a>
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menu responsive">
-                </div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-nav-wrap">
+      <div class="contenedor barra">
+        <a href="index.html" class="logo-link">
+          <img class="logo-img" src="build/img/logo.svg" alt="Logotipo de Bienes Raíces" />
+        </a>
 
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/dark-mode.svg">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-                
-            </div> <!--.barra-->
-        </div>
-    </header>
-
-    <main class="contenedor seccion contenido-centrado">
-        <h1>Casa en Venta frente al bosque</h1>
-
-        <picture>
-            <source srcset="build/img/destacada.webp" type="image/webp">
-            <source srcset="build/img/destacada.jpg" type="image/jpeg">
-            <img loading="lazy" src="build/img/destacada.jpg" alt="imagen de la propiedad">
-        </picture>
-
-        <div class="resumen-propiedad">
-            <p class="precio">$3,000,000</p>
-            <ul class="iconos-caracteristicas">
-                <li>
-                    <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
-                    <p>3</p>
-                </li>
-                <li>
-                    <img class="icono" loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
-                    <p>3</p>
-                </li>
-                <li>
-                    <img class="icono"  loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono habitaciones">
-                    <p>4</p>
-                </li>
-            </ul>
-
-            <p>Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie. Proin tristique commodo felis, sed auctor elit auctor pulvinar. Nunc porta, nibh quis convallis sollicitudin, arcu nisl semper mi, vitae sagittis lorem dolor non risus. Vivamus accumsan maximus est, eu mollis mi. Proin id nisl vel odio semper hendrerit. Nunc porta in justo finibus tempor. Suspendisse lobortis dolor quis elit suscipit molestie. Sed condimentum, erat at tempor finibus, urna nisi fermentum est, a dignissim nisi libero vel est. Donec et imperdiet augue. Curabitur malesuada sodales congue. Suspendisse potenti. Ut sit amet convallis nisi.</p>
-
-            <p>Aliquam lectus magna, luctus vel gravida nec, iaculis ut augue. Praesent ac enim lorem. Quisque ac dignissim sem, non condimentum orci. Morbi a iaculis neque, ac euismod felis. Fusce augue quam, fermentum sed turpis nec, hendrerit dapibus ante. Cras mattis laoreet nibh, quis tincidunt odio fermentum vel. Nulla facilisi.</p>
-        </div>
-    </main>
-
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
+        <div class="mobile-menu" aria-label="Abrir menú">
+          <img src="build/img/barras.svg" alt="Menú responsive" />
         </div>
 
-        <p class="copyright">Todos los derechos Reservados 2021 &copy;</p>
-    </footer>
+        <nav class="navegacion">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncios.html" class="activo">Propiedades</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
 
-    <script src="build/js/bundle.min.js"></script>
+        <a href="contacto.html" class="header-cta-btn">
+          <span>Agendar Cita</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- DETALLE DE LA PROPIEDAD -->
+  <main class="contenedor seccion">
+    <div style="margin-bottom: 2rem;">
+      <a href="anuncios.html" style="color: var(--gold-accent); text-decoration: none; font-family: 'Outfit', sans-serif; font-size: 0.9rem; font-weight: 700; display: inline-flex; align-items: center; gap: 0.4rem;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        <span>Volver al Catálogo de Propiedades</span>
+      </a>
+      <h1 style="font-size: 2.75rem; margin-top: 0.75rem; margin-bottom: 0.5rem;">Casa de Lujo Frente al Bosque</h1>
+      <p style="color: var(--text-muted); font-size: 1.05rem;">Código Ref: BR-8820 • Zona Residencial Exclusiva</p>
+    </div>
+
+    <!-- Imagen Principal Destacada -->
+    <div style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-luxury); margin-bottom: 2.5rem; height: 480px;">
+      <picture>
+        <source srcset="build/img/destacada.webp" type="image/webp" />
+        <img loading="lazy" src="build/img/destacada.jpg" alt="Casa de lujo frente al bosque" style="width: 100%; height: 100%; object-fit: cover;" />
+      </picture>
+    </div>
+
+    <!-- Resumen y Formulario en 2 Columnas -->
+    <div style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 3.5rem; align-items: start;">
+      <div>
+        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+          <div class="precio" style="margin-bottom: 0; font-size: 2.2rem;">$3,200,000 USD</div>
+          <div class="hero-pill-badge" style="background: var(--emerald-soft); border-color: var(--emerald-primary); color: var(--emerald-deep); margin-bottom: 0;">
+            <span>Entrega Inmediata</span>
+          </div>
+        </div>
+
+        <ul class="iconos-caracteristicas" style="margin-bottom: 2rem; border-top: none;">
+          <li><img loading="lazy" src="build/img/icono_wc.svg" alt="Baños" /><span>3 Baños Completos</span></li>
+          <li><img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="Estacionamientos" /><span>3 Estacionamientos</span></li>
+          <li><img loading="lazy" src="build/img/icono_dormitorio.svg" alt="Habitaciones" /><span>4 Recámaras</span></li>
+        </ul>
+
+        <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary);">
+          <p style="margin-bottom: 1.25rem;">
+            Impresionante residencia campestre de autor, concebida para integrarse con la topografía natural del bosque circundante. La propiedad cuenta con techos de doble altura, pisos de madera maciza tratada y ventanales térmicos de última generación que garantizan eficiencia energética y aislamiento acústico.
+          </p>
+          <p style="margin-bottom: 1.25rem;">
+            En la planta baja se despliega un área social abierta conectada a una terraza con asador empotrado y fogón exterior. La cocina está completamente equipada con electrodomésticos empotrados de alta gama, encimeras de cuarzo y despensa walk-in.
+          </p>
+          <p>
+            En el nivel superior, la suite principal cuenta con vestidor privado, baño con tina de hidromasaje y balcón con vista directa al bosque nativo. El inmueble dispone de sistema de seguridad perimetral con cámaras inteligentes y acceso controlado 24 horas.
+          </p>
+        </div>
+      </div>
+
+      <!-- Formulario de Visita / Asesor -->
+      <div class="formulario-luxury">
+        <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--emerald-deep);">Agendar Visita Privada</h3>
+        <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+          Completa tus datos para coordinar un recorrido presencial guiado por un asesor sénior.
+        </p>
+
+        <form>
+          <div class="campo-luxury">
+            <label for="lead-name">Nombre Completo</label>
+            <input type="text" id="lead-name" placeholder="Tu nombre" required />
+          </div>
+
+          <div class="campo-luxury">
+            <label for="lead-email">Correo Electrónico</label>
+            <input type="email" id="lead-email" placeholder="ejemplo@correo.com" required />
+          </div>
+
+          <div class="campo-luxury">
+            <label for="lead-phone">Teléfono de Contacto</label>
+            <input type="tel" id="lead-phone" placeholder="+56 9 1234 5678" />
+          </div>
+
+          <div class="campo-luxury">
+            <label for="lead-date">Fecha Deseada</label>
+            <input type="date" id="lead-date" />
+          </div>
+
+          <button type="submit" class="boton-amarillo-block" style="background: var(--emerald-primary); color: #ffffff; border: none; cursor: pointer; padding: 1rem;">
+            Solicitar Cita de Visita
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-inner">
+        <a href="index.html" class="logo-link">
+          <img class="logo-img" src="build/img/logo.svg" alt="Logotipo Bienes Raíces" style="filter: brightness(0) invert(1);" />
+        </a>
+
+        <nav class="navegacion" style="display: flex;">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncios.html">Propiedades</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+
+      <p class="copyright">
+        Todos los derechos reservados &copy; <span id="current-year">2026</span> Bienes Raíces Exclusivos.
+      </p>
+    </div>
+  </footer>
+
+  <script src="build/js/bundle.js"></script>
 </body>
 </html>

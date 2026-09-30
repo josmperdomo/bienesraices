@@ -1,71 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
-    <link rel="stylesheet" href="build/css/app.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guía para la Decoración de Interiores | Blog Bienes Raíces</title>
+  <meta name="description" content="Aprende cómo armonizar la luz, los materiales nobles y la estética nórdica para lograr residencias que transmiten serenidad y lujo atemporal." />
+
+  <!-- Google Fonts & Stylesheet -->
+  <link rel="stylesheet" href="build/css/app.css" />
 </head>
 <body>
     
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="index.html">
-                    <img src="build/img/logo.svg" alt="Logotipo de Bienes Raices">
-                </a>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-nav-wrap">
+      <div class="contenedor barra">
+        <a href="index.html" class="logo-link">
+          <img class="logo-img" src="build/img/logo.svg" alt="Logotipo de Bienes Raíces" />
+        </a>
 
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menu responsive">
-                </div>
-
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/dark-mode.svg">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-                
-            </div> <!--.barra-->
-        </div>
-    </header>
-
-    <main class="contenedor seccion contenido-centrado">
-        <h1>Guía para la decoración de tu hogar</h1>
-
-   
-        <picture>
-            <source srcset="build/img/destacada2.webp" type="image/webp">
-            <source srcset="build/img/destacada2.jpg" type="image/jpeg">
-            <img loading="lazy" src="build/img/destacada2.jpg" alt="imagen de la propiedad">
-        </picture>
-
-        <p class="informacion-meta">Escrito el: <span>20/10/2021</span> por: <span>Admin</span> </p>
-
-
-        <div class="resumen-propiedad">
-            <p>Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie. Proin tristique commodo felis, sed auctor elit auctor pulvinar. Nunc porta, nibh quis convallis sollicitudin, arcu nisl semper mi, vitae sagittis lorem dolor non risus. Vivamus accumsan maximus est, eu mollis mi. Proin id nisl vel odio semper hendrerit. Nunc porta in justo finibus tempor. Suspendisse lobortis dolor quis elit suscipit molestie. Sed condimentum, erat at tempor finibus, urna nisi fermentum est, a dignissim nisi libero vel est. Donec et imperdiet augue. Curabitur malesuada sodales congue. Suspendisse potenti. Ut sit amet convallis nisi.</p>
-
-            <p>Aliquam lectus magna, luctus vel gravida nec, iaculis ut augue. Praesent ac enim lorem. Quisque ac dignissim sem, non condimentum orci. Morbi a iaculis neque, ac euismod felis. Fusce augue quam, fermentum sed turpis nec, hendrerit dapibus ante. Cras mattis laoreet nibh, quis tincidunt odio fermentum vel. Nulla facilisi.</p>
-        </div>
-    </main>
-
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
+        <div class="mobile-menu" aria-label="Abrir menú">
+          <img src="build/img/barras.svg" alt="Menú responsive" />
         </div>
 
-        <p class="copyright">Todos los derechos Reservados 2021 &copy;</p>
-    </footer>
+        <nav class="navegacion">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncios.html">Propiedades</a>
+          <a href="blog.html" class="activo">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
 
-    <script src="build/js/bundle.min.js"></script>
+        <a href="contacto.html" class="header-cta-btn">
+          <span>Agendar Cita</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ARTÍCULO INDIVIDUAL -->
+  <main class="contenedor seccion" style="max-width: 860px;">
+    <div style="margin-bottom: 2rem;">
+      <a href="blog.html" style="color: var(--gold-accent); text-decoration: none; font-family: 'Outfit', sans-serif; font-size: 0.9rem; font-weight: 700; display: inline-flex; align-items: center; gap: 0.4rem;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        <span>Volver a las Publicaciones del Blog</span>
+      </a>
+      <h1 style="font-size: 2.75rem; margin-top: 0.75rem; margin-bottom: 0.5rem;">Guía para la Decoración de Interiores en Residencias de Lujo</h1>
+      <p class="informacion-meta">Publicado el: <span>18 de Septiembre, 2026</span> • Por: <span>Consejo Editorial de Diseño</span> • <span>5 min de lectura</span></p>
+    </div>
+
+    <!-- Imagen Principal -->
+    <div style="border-radius: var(--radius-md); overflow: hidden; height: 440px; margin-bottom: 3rem; box-shadow: var(--shadow-luxury);">
+      <picture>
+        <source srcset="build/img/destacada2.webp" type="image/webp" />
+        <img loading="lazy" src="build/img/destacada2.jpg" alt="Interior decorado" style="width: 100%; height: 100%; object-fit: cover;" />
+      </picture>
+    </div>
+
+    <!-- Contenido del Artículo -->
+    <div style="font-size: 1.05rem; line-height: 1.85; color: var(--text-secondary);">
+      <p style="margin-bottom: 1.5rem; font-size: 1.15rem; color: var(--emerald-deep); font-weight: 500;">
+        El concepto contemporáneo del lujo ya no se mide por la ostentación recargada, sino por la pureza espacial, la nobleza de las materias primas y la sensación de calma que un hogar es capaz de evocar.
+      </p>
+
+      <h3 style="font-size: 1.7rem; margin-top: 2.5rem; margin-bottom: 1rem;">1. La Luz Natural como Elemento Estructural</h3>
+      <p style="margin-bottom: 1.5rem;">
+        Antes de seleccionar mobiliario, el primer paso consiste en analizar la trayectoria solar. Los espacios orientados al este reciben la suave luz matutina que resalta tonos cálidos como la arcilla, el lino y el travertino, mientras que las salas con luz de tarde admiten maderas más oscuras como el nogal o roble ahumado.
+      </p>
+
+      <h3 style="font-size: 1.7rem; margin-top: 2.5rem; margin-bottom: 1rem;">2. Materiales Nobles: Texturas que Cuentan una Historia</h3>
+      <p style="margin-bottom: 1.5rem;">
+        La combinación de piedra natural (mármol, pizarra o cuarcita) con metales de acabado mate como el bronce envejecido o el latón cepillado genera contrastes visuales de gran refinamiento sin saturar la vista. Apostar por piezas de autor y artesanía local añade autenticidad a la propuesta decorativa.
+      </p>
+
+      <h3 style="font-size: 1.7rem; margin-top: 2.5rem; margin-bottom: 1rem;">3. Armonía Acústica y Fluidez Espacial</h3>
+      <p style="margin-bottom: 2rem;">
+        Un hogar exclusivo cuida el confort sonoro mediante alfombras de fibras naturales, paneles acústicos disimulados en carpintería y cortinajes dobles de lino que tamizan tanto el sonido exterior como el exceso de radiación solar.
+      </p>
+
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 2rem; margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <span style="font-family: 'Outfit', sans-serif; font-weight: 700; color: var(--emerald-deep);">¿Te gustaría recibir asesoría para decorar o remodelar tu propiedad?</span>
+        <a href="contacto.html" class="header-cta-btn">Consultar Asesor</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-inner">
+        <a href="index.html" class="logo-link">
+          <img class="logo-img" src="build/img/logo.svg" alt="Logotipo Bienes Raíces" style="filter: brightness(0) invert(1);" />
+        </a>
+
+        <nav class="navegacion" style="display: flex;">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncios.html">Propiedades</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+
+      <p class="copyright">
+        Todos los derechos reservados &copy; <span id="current-year">2026</span> Bienes Raíces Exclusivos.
+      </p>
+    </div>
+  </footer>
+
+  <script src="build/js/bundle.js"></script>
 </body>
 </html>

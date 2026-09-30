@@ -1,97 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
-    <link rel="stylesheet" href="build/css/app.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nosotros | Bienes Raíces de Lujo</title>
+  <meta name="description" content="Conoce la historia, filosofía y equipo de asesores detrás de Bienes Raíces Exclusivos. Más de 25 años conectando propiedades extraordinarias con clientes distinguidos." />
+
+  <!-- Google Fonts & Stylesheet -->
+  <link rel="stylesheet" href="build/css/app.css" />
 </head>
 <body>
     
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="index.html">
-                    <img src="build/img/logo.svg" alt="Logotipo de Bienes Raices">
-                </a>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-nav-wrap">
+      <div class="contenedor barra">
+        <a href="index.html" class="logo-link">
+          <img class="logo-img" src="build/img/logo.svg" alt="Logotipo de Bienes Raíces" />
+        </a>
 
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menu responsive">
-                </div>
-
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/dark-mode.svg">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-                
-            </div> <!--.barra-->
-        </div>
-    </header>
-
-    <main class="contenedor seccion">
-        <h1>Conoce sobre Nosotros</h1>
-
-        <div class="contenido-nosotros">
-            <div class="imagen">
-                <picture>
-                    <source srcset="build/img/nosotros.webp" type="image/webp">
-                    <source srcset="build/img/nosotros.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/nosotros.jpg" alt="Sobre Nosotros">
-                </picture>
-            </div>
-
-            <div class="texto-nosotros">
-                <blockquote>
-                    25 Años de experiencia
-                </blockquote>
-
-                <p>Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie. Proin tristique commodo felis, sed auctor elit auctor pulvinar. Nunc porta, nibh quis convallis sollicitudin, arcu nisl semper mi, vitae sagittis lorem dolor non risus. Vivamus accumsan maximus est, eu mollis mi. Proin id nisl vel odio semper hendrerit. Nunc porta in justo finibus tempor. Suspendisse lobortis dolor quis elit suscipit molestie. Sed condimentum, erat at tempor finibus, urna nisi fermentum est, a dignissim nisi libero vel est. Donec et imperdiet augue. Curabitur malesuada sodales congue. Suspendisse potenti. Ut sit amet convallis nisi.</p>
-
-                <p>Aliquam lectus magna, luctus vel gravida nec, iaculis ut augue. Praesent ac enim lorem. Quisque ac dignissim sem, non condimentum orci. Morbi a iaculis neque, ac euismod felis. Fusce augue quam, fermentum sed turpis nec, hendrerit dapibus ante. Cras mattis laoreet nibh, quis tincidunt odio fermentum vel. Nulla facilisi.</p>
-            </div>
-        </div>
-    </main>
-
-    <section class="contenedor seccion">
-        <h1>Más Sobre Nosotros</h1>
-
-        <div class="iconos-nosotros">
-            <div class="icono">
-                <img src="build/img/icono1.svg" alt="Icono seguridad" loading="lazy">
-                <h3>Seguridad</h3>
-                <p>Possimus, suscipit repudiandae. Autem deserunt aliquid deleniti sit minus consectetur obcaecati molestiae dolorem natus dolores reiciendis tempore, explicabo cum nobis laudantium. Voluptates?</p>
-            </div>
-            <div class="icono">
-                <img src="build/img/icono2.svg" alt="Icono Precio" loading="lazy">
-                <h3>Precio</h3>
-                <p>Possimus, suscipit repudiandae. Autem deserunt aliquid deleniti sit minus consectetur obcaecati molestiae dolorem natus dolores reiciendis tempore, explicabo cum nobis laudantium. Voluptates?</p>
-            </div>
-            <div class="icono">
-                <img src="build/img/icono3.svg" alt="Icono Tiempo" loading="lazy">
-                <h3>A Tiempo</h3>
-                <p>Possimus, suscipit repudiandae. Autem deserunt aliquid deleniti sit minus consectetur obcaecati molestiae dolorem natus dolores reiciendis tempore, explicabo cum nobis laudantium. Voluptates?</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
+        <div class="mobile-menu" aria-label="Abrir menú">
+          <img src="build/img/barras.svg" alt="Menú responsive" />
         </div>
 
-        <p class="copyright">Todos los derechos Reservados 2021 &copy;</p>
-    </footer>
+        <nav class="navegacion">
+          <a href="nosotros.html" class="activo">Nosotros</a>
+          <a href="anuncios.html">Propiedades</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
 
-    <script src="build/js/bundle.min.js"></script>
+        <a href="contacto.html" class="header-cta-btn">
+          <span>Agendar Cita</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL SOBRE NOSOTROS -->
+  <main class="contenedor seccion">
+    <div class="section-heading">
+      <span class="section-pretitle">Trayectoria & Excelencia</span>
+      <h1 class="section-main-title">Conoce Nuestra Firma</h1>
+      <p class="section-lead">Más de dos décadas seleccionando las mejores propiedades y brindando asesoría de alto nivel.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; margin-bottom: 5rem;">
+      <div style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-luxury);">
+        <picture>
+          <source srcset="build/img/nosotros.webp" type="image/webp" />
+          <img loading="lazy" src="build/img/nosotros.jpg" alt="Instalaciones de Bienes Raíces" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+        </picture>
+      </div>
+
+      <div>
+        <div class="hero-pill-badge" style="background: var(--gold-soft); border-color: var(--gold-accent); margin-bottom: 1rem;">
+          <span>25 Años de Experiencia Comprobada</span>
+        </div>
+        <h2 style="font-size: 2.2rem; margin-bottom: 1.25rem;">Compromiso con el Arte de Vivir Bien</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 1.02rem; line-height: 1.7;">
+          Fundada bajo la premisa de que una residencia es mucho más que una estructura física, nuestra agencia selecciona meticulosamente inmuebles que reúnen valor arquitectónico, privacidad inquebrantable y confort superior.
+        </p>
+        <p style="color: var(--text-secondary); font-size: 1.02rem; line-height: 1.7;">
+          Nuestro equipo multidisciplinario de asesores certificados, tasadores y abogados inmobiliarios acompaña a cada cliente en una gestión fluida, resguardando cada detalle contractual y asegurando una adquisición serena y financieramente óptima.
+        </p>
+      </div>
+    </div>
+
+    <!-- Pilares de Valor -->
+    <div class="section-heading" style="margin-bottom: 2.5rem;">
+      <span class="section-pretitle">Nuestra Garantía</span>
+      <h2 class="section-main-title">Valores que nos Definen</h2>
+    </div>
+
+    <div class="iconos-nosotros">
+      <div class="icono-card">
+        <div class="icono-icon-box">
+          <img src="build/img/icono1.svg" alt="Seguridad" loading="lazy" />
+        </div>
+        <h3>Seguridad Rigurosa</h3>
+        <p>Certificación de títulos de dominio, revisión exhaustiva de cargas y acompañamiento notarial de inicio a fin.</p>
+      </div>
+
+      <div class="icono-card">
+        <div class="icono-icon-box">
+          <img src="build/img/icono2.svg" alt="Precio" loading="lazy" />
+        </div>
+        <h3>Valor & Tasación Real</h3>
+        <p>Precios equilibrados conforme al mercado premium contemporáneo, garantizando un patrimonio sólido y sostenible.</p>
+      </div>
+
+      <div class="icono-card">
+        <div class="icono-icon-box">
+          <img src="build/img/icono3.svg" alt="Tiempo" loading="lazy" />
+        </div>
+        <h3>Puntualidad Absoluta</h3>
+        <p>Respetamos escrupulosamente los tiempos de entrega, firmas de promesa y traspaso de llaves sin demoras innecesarias.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-inner">
+        <a href="index.html" class="logo-link">
+          <img class="logo-img" src="build/img/logo.svg" alt="Logotipo Bienes Raíces" style="filter: brightness(0) invert(1);" />
+        </a>
+
+        <nav class="navegacion" style="display: flex;">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncios.html">Propiedades</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+
+      <p class="copyright">
+        Todos los derechos reservados &copy; <span id="current-year">2026</span> Bienes Raíces Exclusivos.
+      </p>
+    </div>
+  </footer>
+
+  <script src="build/js/bundle.js"></script>
 </body>
 </html>
